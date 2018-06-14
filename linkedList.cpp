@@ -9,7 +9,7 @@ struct Cell {
     int value;
 };
 
-/* Usage: Cell* cell = ConvertToList(vector)
+/* Usage: Cell* cell = convert_to_list(vector)
  * Effect: Convert the first item in a vector<int> to a Cell*. Then removes the item from the vector.
  * */
 Cell* convert_to_list(Vector<int> &vector)
@@ -57,7 +57,7 @@ Cell* create_linked_list(Vector<int> &vector)
     return listHead;
 }
 
-/* Usage: int sum = SumList(list)
+/* Usage: int sum = sum_list(list)
  * Effect: Sums the values of all the Cell* in a linked list
  * */
 int sum_list(Cell *list)
