@@ -88,12 +88,10 @@ void print_linked_list(Cell* list)
     // Traversal pointer
     Cell* ptr;
     // Prints all but the last value in the linked list
-    for (ptr = list; ptr->next != NULL; ptr = ptr->next)
+    for (ptr = list; ptr != NULL; ptr = ptr->next)
     {
         cout << ptr->value << endl;
     }
-    // Prints the final value in the linked list
-    cout << ptr->value << endl;
 }
 
 /* Usage: append_list(list1, list2)
